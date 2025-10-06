@@ -1,0 +1,186 @@
+<%- include('layouts/layout', { title, highlight, user, body: `
+  <!-- HERO -->
+  <section class="hero-llanteria p-4 p-md-5 rounded-4 position-relative overflow-hidden text-white">
+    <img src="/img/l.png" class="hero-bg" alt="Carro con llantas"> <!-- pon tu propia imagen en /public/img/hero.jpg si quieres -->
+    <div class="position-relative">
+      <h1 class="display-6 display-md-5 fw-bold mb-2">Tu seguridad empieza con buenas llantas</h1>
+      <p class="lead mb-3">Venta, instalación, balanceo y alineado. Marcas premium y opciones económicas.</p>
+      <a href="/llantas" class="btn btn-accent btn-lg">Ver catálogo</a>
+    </div>
+  </section>
+
+  <!-- 3 FEATURES -->
+  <section class="mt-5">
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm card-feature">
+          <div class="card-body">
+            <h5 class="card-title">Instalación profesional</h5>
+            <p class="card-text text-muted">Técnicos capacitados y herramientas certificadas.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm card-feature">
+          <div class="card-body">
+            <h5 class="card-title">Garantía</h5>
+            <p class="card-text text-muted">Respaldo en fábrica y garantía por montaje.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm card-feature">
+          <div class="card-body">
+            <h5 class="card-title">Financiamiento</h5>
+            <p class="card-text text-muted">Opciones accesibles para renovar tus llantas.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MARCAS -->
+  <section class="mt-5">
+    <h3 class="section-title">Marcas que manejamos</h3>
+    <div class="d-flex flex-wrap gap-2">
+      <span class="badge bg-light text-dark border brand-pill">Michelin</span>
+      <span class="badge bg-light text-dark border brand-pill">Pirelli</span>
+      <span class="badge bg-light text-dark border brand-pill">Goodyear</span>
+      <span class="badge bg-light text-dark border brand-pill">Bridgestone</span>
+      <span class="badge bg-light text-dark border brand-pill">Continental</span>
+      <span class="badge bg-light text-dark border brand-pill">Dunlop</span>
+    </div>
+  </section>
+
+
+
+  <!-- SERVICIOS DE TALLER -->
+  <section class="mt-5">
+    <h3 class="section-title">Servicios de taller</h3>
+    <div class="row g-4">
+      <div class="col-6 col-md-3">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <div class="icon-circle mb-2"><i class="bi bi-tools"></i></div>
+            <h6 class="mb-1">Montaje</h6>
+            <p class="text-muted small mb-0">Torque calibrado y seguridad.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <div class="icon-circle mb-2"><i class="bi bi-gear"></i></div>
+            <h6 class="mb-1">Balanceo</h6>
+            <p class="text-muted small mb-0">Vibración mínima a alta velocidad.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <div class="icon-circle mb-2"><i class="bi bi-arrow-repeat"></i></div>
+            <h6 class="mb-1">Rotación</h6>
+            <p class="text-muted small mb-0">Mayor vida útil del juego.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <div class="icon-circle mb-2"><i class="bi bi-shield-check"></i></div>
+            <h6 class="mb-1">Revisión</h6>
+            <p class="text-muted small mb-0">Presión, desgaste y seguridad.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESO -->
+  <section class="mt-5">
+    <h3 class="section-title">¿Cómo trabajamos?</h3>
+    <div class="row g-3">
+      <div class="col-6 col-md-3"><div class="step-card">1. Agendamos tu cita</div></div>
+      <div class="col-6 col-md-3"><div class="step-card">2. Diagnóstico rápido</div></div>
+      <div class="col-6 col-md-3"><div class="step-card">3. Instalación & balanceo</div></div>
+      <div class="col-6 col-md-3"><div class="step-card">4. Entrega y garantía</div></div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIOS -->
+  <section class="mt-5">
+    <h3 class="section-title">Lo que dicen nuestros clientes</h3>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <i class="bi bi-quote"></i>
+            <p class="mb-2">“Excelente servicio y buenos precios. Quedé listo en menos de una hora.”</p>
+            <div class="text-muted small">— Carlos M.</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <i class="bi bi-quote"></i>
+            <p class="mb-2">“Me asesoraron con la medida correcta y se nota la diferencia en carretera.”</p>
+            <div class="text-muted small">— Andrea P.</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <i class="bi bi-quote"></i>
+            <p class="mb-2">“Atención profesional, volveré para el mantenimiento.”</p>
+            <div class="text-muted small">— Luis G.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PREGUNTAS FRECUENTES -->
+  <section class="mt-5">
+    <h3 class="section-title">Preguntas frecuentes</h3>
+    <div class="accordion" id="faq">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="q1">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#a1">¿Cuánto tarda el montaje?</button>
+        </h2>
+        <div id="a1" class="accordion-collapse collapse show" data-bs-parent="#faq">
+          <div class="accordion-body">Entre 45 y 60 minutos por juego, incluyendo balanceo.</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="q2">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a2">¿Tienen garantía?</button>
+        </h2>
+        <div id="a2" class="accordion-collapse collapse" data-bs-parent="#faq">
+          <div class="accordion-body">Sí, garantía de fábrica y garantía por montaje de 12 meses.</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="q3">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a3">¿Trabajan sin cita?</button>
+        </h2>
+        <div id="a3" class="accordion-collapse collapse" data-bs-parent="#faq">
+          <div class="accordion-body">Atendemos por orden de llegada; recomendamos reservar para evitar esperas.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="my-5 p-4 p-md-5 bg-white rounded-4 shadow-sm">
+    <div class="d-md-flex align-items-center justify-content-between">
+      <div>
+        <h4 class="mb-1">¿Listo para renovar tus llantas?</h4>
+        <p class="text-muted mb-0">Escríbenos y te cotizamos sin compromiso.</p>
+      </div>
+      <a href="/contacto" class="btn btn-accent btn-lg mt-3 mt-md-0">Contactar ahora</a>
+    </div>
+  </section>
+`}) %>

@@ -1,0 +1,38 @@
+[
+  {
+    "id": "t001",
+    "brand": "Michelin",
+    "model": "Primacy 4",
+    "size": "205/55 R16",
+    "price": 95.99,
+    "category": "Turismo",
+    "type": "Radial",
+    "load_speed": "91V",
+    "warranty": "12 meses",
+    "image": "/img/images.jpeg"
+  },
+  {
+    "id": "t002",
+    "brand": "Pirelli",
+    "model": "Cinturato P7",
+    "size": "225/45 R17",
+    "price": 109.5,
+    "category": "Turismo",
+    "type": "Radial",
+    "load_speed": "94W",
+    "warranty": "12 meses",
+    "image": "/img/images.jpeg"
+  },
+  {
+    "id": "t003",
+    "brand": "Goodyear",
+    "model": "EfficientGrip",
+    "size": "195/65 R15",
+    "price": 82.4,
+    "category": "Económica",
+    "type": "Radial",
+    "load_speed": "91H",
+    "warranty": "12 meses",
+    "image": "/img/llanta.jpeg"
+  }
+]

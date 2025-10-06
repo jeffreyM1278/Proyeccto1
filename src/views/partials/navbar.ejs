@@ -1,0 +1,25 @@
+<nav class="navbar navbar-expand-lg bg-white border-bottom shadow-sm nav-llanteria">
+  <div class="container">
+    <a class="navbar-brand fw-bold brand-llanteria" href="/">Llantech</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div id="nav" class="collapse navbar-collapse">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-lines">
+        <li class="nav-item"><a href="/" class="nav-link <%= highlight==='Inicio' ? 'active fw-semibold' : '' %>">Inicio</a></li>
+        <li class="nav-item"><a href="/llantas" class="nav-link <%= highlight==='Catálogo' ? 'active fw-semibold' : '' %>">Catálogo</a></li>
+        <li class="nav-item"><a href="/contacto" class="nav-link <%= highlight==='Contacto' ? 'active fw-semibold' : '' %>">Contacto</a></li>
+      </ul>
+      <div class="d-flex gap-2">
+        <% if (user) { %>
+          <span class="navbar-text">Hola, <strong><%= user.username %></strong></span>
+          <a href="/perfil" class="btn btn-outline-accent btn-sm">Perfil</a>
+          <a href="/logout" class="btn btn-accent btn-sm">Salir</a>
+        <% } else { %>
+          <a href="/login" class="btn btn-outline-accent btn-sm">Login</a>
+          <a href="/register" class="btn btn-accent btn-sm">Registro</a>
+        <% } %>
+      </div>
+    </div>
+  </div>
+</nav>

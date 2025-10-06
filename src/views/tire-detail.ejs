@@ -1,0 +1,32 @@
+<%- include('layouts/layout', { title, highlight, user, body: `
+  <div class="row g-4">
+    <div class="col-md-5">
+      <img src="${tire.image}" class="w-100 rounded shadow-sm object-fit-contain" style="height:320px" alt="${tire.brand} ${tire.model}">
+    </div>
+    <div class="col-md-7">
+      <h1 class="h3 mb-1">${tire.brand} ${tire.model}</h1>
+      <p class="text-muted mb-2">${tire.size} • ${tire.category || 'Turismo'}</p>
+      <p class="display-6 fw-bold">$${tire.price.toFixed(2)}</p>
+      <div class="d-flex gap-2 mb-4">
+        <a target="_blank" rel="noopener" class="btn btn-success"
+           href="https://wa.me/50300000000?text=${encodeURIComponent(`Hola, quiero cotizar la llanta ${tire.brand} ${tire.model} (${tire.size}) [ID: ${tire.id}]`)}">
+           Cotizar por WhatsApp
+        </a>
+        <a href="/llantas" class="btn btn-outline-secondary">Volver</a>
+      </div>
+
+      <h5>Especificaciones</h5>
+      <table class="table table-sm">
+        <tbody>
+          <tr><th>Marca</th><td>${tire.brand}</td></tr>
+          <tr><th>Modelo</th><td>${tire.model}</td></tr>
+          <tr><th>Medida</th><td>${tire.size}</td></tr>
+          <tr><th>Categoría</th><td>${tire.category || 'Turismo'}</td></tr>
+          <tr><th>Índice carga/velocidad</th><td>${tire.load_speed || '91V'}</td></tr>
+          <tr><th>Tipo</th><td>${tire.type || 'Radial'}</td></tr>
+          <tr><th>Garantía</th><td>${tire.warranty || '12 meses'}</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+`}) %>
