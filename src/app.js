@@ -31,4 +31,4 @@ app.use("/llantas", tiresRoutes);
 app.use((req, res) => res.status(404).render("home", { title: "404", highlight: "", user: req.session.user }));
 
 const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => console.log(`🚗 Servidor corriendo en http://localhost:${PORT}`));
+app.listen(PORT, () => console.log(` Servidor corriendo en http://localhost:${PORT}`));
